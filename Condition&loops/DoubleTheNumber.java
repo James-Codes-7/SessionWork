@@ -11,16 +11,12 @@ public class DoubleTheNumber {
 		int number=scan.nextInt();
 		System.out.println("Enter the number of times");
 		int times=scan.nextInt(),temp=1;
-		while(true)
+		while(temp!=times)
 		{
-			if(temp==times)
-			{
-				System.out.println("Output:"+number);break;		
-			}
 			number+=number;
 			temp++;
 		}
-
+		System.out.println("Output:"+number);
 	}
 
 }
