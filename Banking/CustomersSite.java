@@ -148,7 +148,7 @@ public class CustomersSite {
 
 			System.out.println("View Account Balance      Press 1");
 			System.out.println("Deposit Money             Press 2");
-			System.out.println("WithDraw Money            Press 3");
+			System.out.println("Account Transfer            Press 3");
 			System.out.println("Transactions History      Press 4");
 			System.out.println("Exit                      Press 5");
 			option=scan.nextByte();
@@ -158,7 +158,7 @@ public class CustomersSite {
 			break;
 			case 2:TransactionsDetails.depositMoney(accountNo,customerDetails);
 			break;
-			case 3:TransactionsDetails.withDrawMoney(accountNo,
+			case 3:TransactionsDetails.accountTransfer(accountNo,
 					customerDetails,loginCheck);break;
 			case 4:TransactionsDetails.viewTransactionsHistory(accountNo);break;
 			case 5:return;

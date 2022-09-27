@@ -55,7 +55,7 @@ public class TransactionsDetails {
 		
 		
 	}
-	public static void withDrawMoney(long accountno
+	public static void accountTransfer(long accountno
 			,ArrayList<CustomersSite> customerDetails,HashMap<Long,String> loginCheck)
 	{
 		long amount=0;
@@ -150,16 +150,16 @@ public class TransactionsDetails {
 			}
 			System.out.println();
 		}
-		for(WithDrawHistory withdrawHistory:withdrawHistory)
+		for(WithDrawHistory accountTransferHistory:withdrawHistory)
 		{
-			if(AccountNo==withdrawHistory.userAccountNo)
+			if(AccountNo==accountTransferHistory.userAccountNo)
 			{
-				System.out.println("Account No:       "+withdrawHistory.userAccountNo);
-				System.out.println("ReceiverAccountNo:"+withdrawHistory.receiverAccountNo);
-				System.out.println("Withdraw Amount:  "+withdrawHistory.withDrawAmount);
-				System.out.println("Withdraw Date:    "+withdrawHistory.withdrawDate);
-				System.out.println("Account balance:  "+withdrawHistory.balanceAmount);
-				System.out.println("Status:           "+withdrawHistory.status);
+				System.out.println("Account No:       "+accountTransferHistory.userAccountNo);
+				System.out.println("ReceiverAccountNo:"+accountTransferHistory.receiverAccountNo);
+				System.out.println("Transfer Amount:  "+accountTransferHistory.withDrawAmount);
+				System.out.println("Withdraw Date:    "+accountTransferHistory.withdrawDate);
+				System.out.println("Account balance:  "+accountTransferHistory.balanceAmount);
+				System.out.println("Status:           "+accountTransferHistory.status);
 				
 				
 			}
